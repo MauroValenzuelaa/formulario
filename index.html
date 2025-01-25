@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Formulario</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <form class="form">
+                    <h2>Bienvenido</h2>
+                    <p>Ingrese sus datos..</p>
+                    <div class="form__login">
+                        <label>
+                            Usuario
+                            <input
+                                class="input-form"
+                                type="text"
+                                placeholder="Nombre"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div class="form__login">
+                        <label
+                            >Contraseña
+                            <input
+                                class="input-form"
+                                type="password"
+                                placeholder="Contraseña"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div class="opciones">
+                        <label
+                            >Recuerdame
+                            <input
+                                class="input-form"
+                                type="checkbox"
+                                name=""
+                                id=""
+                            />
+                        </label>
+                        <a href="#">Olvide mi contraseña</a>
+                    </div>
+                    <div class="form__enviar">
+                        <button class="btn btn-login" type="submit">
+                            Entrar
+                        </button>
+                    </div>
+                    <div class="otras">
+                        <p>Elige otro metodo de autenticación</p>
+                        <button class="btn btn-google" type="button">
+                            GOOGLE
+                        </button>
+                        <button class="btn btn-facebook" type="button">
+                            FACEBOOK
+                        </button>
+                        <button class="btn btn-twitter" type="button">
+                            TWITTER
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="img-container">
+                <img src="/fondo.jpg" alt="" />
+            </div>
+        </div>
+    </body>
+</html>

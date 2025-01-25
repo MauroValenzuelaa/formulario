@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.form-container,
+.img-container {
+    flex: 1;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px; /* Espaciado interno */
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form {
+    width: 60%;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 2em; /* Escalable con el zoom */
+}
+
+.form p {
+    text-align: center;
+    font-size: 1em; /* Escalable con el zoom */
+    margin-bottom: 10px;
+}
+
+.form__login label {
+    font-size: 1em; /* Escalable */
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.form__login input {
+    padding: 0.8em;
+    margin-top: 5px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px; /* Espaciado entre los elementos */
+}
+
+.opciones label {
+    display: flex;
+    align-items: center; /* Alinea el texto y el checkbox en una línea */
+    gap: 5px; /* Espaciado entre el texto y el checkbox */
+}
+
+.opciones a {
+    text-decoration: none;
+    color: #40a3e9;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.otras {
+    text-align: center;
+}
+
+.otras p {
+    font-size: 17px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 10px;
+    border: none;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-login {
+    background-color: black;
+}
+
+.btn-google {
+    background: linear-gradient(90deg, #4285f4, #ea4335, #fbbc05);
+}
+
+.btn-facebook {
+    background-color: #316ff6;
+}
+
+.btn-twitter {
+    background-color: #3396dd;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.img-container img {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*HOLA*/
+
+@media (max-width: 1180px) {
+    .img-container {
+        display: none;
+    }
+
+    .form-container {
+        border-radius: 10px; /* Ajusta el borde para que sea uniforme */
+    }
+
+    .form {
+        min-width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        min-width: 100%;
+    }
+}
